@@ -1,1 +1,0 @@
-# DJClassifieds-Zarinpal
