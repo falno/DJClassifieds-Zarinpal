@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="djclassifiedspayment"  method="upgrade">
+	<name>PLG_DJCFZARINPAL_PAYMENT_NAME</name>
+	<author>Mohsen Ranjbar (mimrahe)</author>
+	<creationDate>June 2016</creationDate>
+	<copyright>Copyright (C) 2016 Zarinpal.com LTD, All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>mimrahe@gmail.com</authorEmail>
+	<authorUrl>http://mimrahe.com</authorUrl>
+	<version>3.4.2</version>
+	<description>PLG_DJCFZARINPAL_PAYMENT_DESCRIPTION</description>
+	<files>
+		<filename plugin="djcfZarinpal">djcfZarinpal.php</filename>
+		<folder>djcfZarinpal</folder>
+	</files>
+	<languages folder="language">
+		<language tag="fa-IR">fa-IR.plg_djclassifiedspayment_djcfZarinpal.ini</language>
+		<language tag="fa-IR">fa-IR.plg_djclassifiedspayment_djcfZarinpal.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="merchant_id" type="text" size="50" required="true" default="" label="PLG_DJCFZARINPAL_PAYMENT_LABEL_MERCHANT_ID" description="PLG_DJCFZARINPAL_PAYMENT_DESC_MERCHANT_ID"/>
+		        <field name="test" type="radio" default="1" label="PLG_DJCFZARINPAL_PAYMENT_LABEL_TEST" description="PLG_DJCFZARINPAL_PAYMENT_DESC_TEST">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+		        <field name="gate_type" type="radio" default="1" label="PLG_DJCFZARINPAL_PAYMENT_LABEL_GATE_TYPE" description="PLG_DJCFZARINPAL_PAYMENT_DESC_GATE_TYPE">
+					<option value="0">PLG_DJCFZARINPAL_PAYMENT_ZARINGATE</option>
+					<option value="1">PLG_DJCFZARINPAL_PAYMENT_WEBGATE</option>
+				</field>
+				<field name="currency_code" type="radio" default="1" label="PLG_DJCFZARINPAL_PAYMENT_LABEL_CURRENCY" description="PLG_DJCFZARINPAL_PAYMENT_DESC_CURRENCY">
+					<option value="0">PLG_DJCFZARINPAL_PAYMENT_RIAL</option>
+					<option value="1">PLG_DJCFZARINPAL_PAYMENT_TOMAN</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
